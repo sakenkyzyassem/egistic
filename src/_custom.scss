@@ -1,0 +1,39 @@
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+
+$body-bg: #E5E5E5;
+$body-color: #1C1C1C;
+$primary: #4B970F;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: #E0E2D8;
+$dark: $body-color;
+
+// This table defines the theme colors (variant names)
+$theme-colors: (
+    'primary': $primary,
+    'secondary': $secondary,
+    'success': $success,
+    'info': $info,
+    'warning': $warning,
+    'danger': $danger,
+    'light': $light,
+    'dark': $dark
+);
+
+
+$enable-caret:              true !default;
+$enable-rounded:            true !default;
+$enable-shadows:            false !default;
+$enable-gradients:          false !default;
+$enable-transitions:        true !default;
+$enable-hover-media-query:  false !default;
+$enable-grid-classes:       true !default;
+$enable-print-styles:       true !default;
+
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import 'node_modules/bootstrap-vue/src/index.scss';
+

@@ -5,19 +5,25 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "svg": "vsvg -s ./src/icons/svg -t ./src/icons/components --ext ts --es6"
   },
   "dependencies": {
-    "core-js": "^3.6.5",
+    "bootstrap": "^4.5.3",
+    "bootstrap-vue": "^2.21.2",
+    "core-js": "^3.8.2",
     "vue": "^2.6.11",
     "vue-class-component": "^7.2.3",
-    "vue-property-decorator": "^9.1.2"
+    "vue-property-decorator": "^9.1.2",
+    "vue-router": "^3.4.9",
+    "vue-svgicon": "^3.2.9"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^4.5.0",
     "@vue/cli-plugin-typescript": "^4.5.0",
     "@vue/cli-service": "^4.5.0",
     "node-sass": "^4.12.0",
+    "sass": "^1.32.4",
     "sass-loader": "^8.0.2",
     "typescript": "~3.9.3",
     "vue-template-compiler": "^2.6.11"
