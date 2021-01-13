@@ -11,7 +11,7 @@
                 variant="light"
                 @click="signin"
             >
-            <svg-icon icon="person" height="19px" fill="none"></svg-icon>
+            <svg-icon icon="person" height="19px" :fill="false"></svg-icon>
             Войти в кабинет</b-button>
             <b-button
                 variant="primary"

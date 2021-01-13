@@ -6,6 +6,10 @@ export const mainRoutes: RouteConfig[] = [
         path: '/',
         component: () => import(/* webpackChunkName: "dashboard" */ '@/views/index.vue'),
     },
+    {
+      path: '/someRoute',
+      redirect: '/',
+  },
 ];
 
 const createRouter = () => new VueRouter({
