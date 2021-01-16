@@ -2,13 +2,30 @@
 
 body {
     margin: 0;
-    font-family: "Inter", "Rubic", "Roboto Light", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: Inter, Rubic, "Roboto Light", -apple-system, BlinkMacSystemFont, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     width: 100%;
     overflow-x: hidden;
 }
 
-h1, h2, p, a, .btn {
-    font-family: "Inter";
+h1 {
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+}
+
+.title {
+    font-family: Rubik;
+    font-weight: 700;
+    letter-spacing: 0em;
+}
+
+.subtitle {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    color: #878882;
 }

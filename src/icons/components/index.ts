@@ -1,5 +1,8 @@
 /* tslint:disable */
 import './analytics'
+import './arrow-down'
+import './arrow-left'
+import './arrow-right'
 import './before-after'
 import './box-correct'
 import './chemical-tube'

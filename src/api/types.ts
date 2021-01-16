@@ -21,4 +21,18 @@ interface Info {
     details: string;
 }
 
+interface QnA {
+    question: string;
+    answer: string;
+}
 
+interface UserBasic {
+    username: string;
+    avatar: string;
+    jobTitle: string;
+}
+
+interface Feedback {
+    user: UserBasic;
+    feedback: string;
+}

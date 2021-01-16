@@ -5,11 +5,11 @@ import router from './router/router';
 import App from './App.vue';
 
 import SvgIcon from 'vue-svgicon';
-import './icons/components';
 import { BootstrapVue } from 'bootstrap-vue';
-import '@/App.scss';
 
-import '@/types/types';
+import '@/App.scss';
+import '@/api/types';
+import './icons/components';
 
 Vue.use(SvgIcon, {
   tagName: 'svg-icon',

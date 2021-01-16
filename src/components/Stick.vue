@@ -1,14 +1,14 @@
 <template>
     <div class="p-3">
         <div class="stick">
-            <template v-for="header in headers">
-                <h1 :key="header">
+            <template v-for="(header, index) in headers">
+                <h1 :key="index">
                     {{ header }}
                 </h1>
             </template>
             <p>{{ text }}</p>
         </div>
-        <img class="stick-shadow" src="../assets/shadow.png" alt="" width="360px"/>
+        <img class="stick-shadow" src="../assets/shadow.png" alt="" width="360px" />
     </div>
 </template>
 
@@ -20,14 +20,12 @@ import { Component, Prop } from 'vue-property-decorator';
     name: 'Stick',
 })
 export default class Stick extends Vue {
-    @Prop() protected readonly headers: string[] = [];
-    @Prop() protected readonly text: string = '';
+    @Prop({ default: [] }) private readonly headers!: string[];
+    @Prop({ default: '' }) private readonly text!: string;
 }
 </script>
 
 <style lang="scss">
-@import '../App.scss';
-
 .stick {
     position: relative;
     width: 360px;

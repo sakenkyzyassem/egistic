@@ -37,6 +37,7 @@
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
 import Logo from './Logo.vue';
+import { footerIcons } from '@/api/data';
 
 @Component({
     name: 'MainFooter',
@@ -45,24 +46,7 @@ import Logo from './Logo.vue';
     },
 })
 export default class MainFooter extends Vue {
-    private footerIcons: ELink[] = [
-    {
-      title: 'fb',
-      to: 'https://www.facebook.com/egistickz/',
-    },
-    {
-      title: 'insta',
-      to: 'https://www.instagram.com/egistic.kz/',
-    },
-    {
-      title: 'tele',
-      to: 'https://t.me/egistickz',
-    },
-    {
-      title: 'whatsapp',
-      to: 'https://wa.me/77029774926',
-    },
-  ];
+  private footerIcons: ELink[] = footerIcons;
 
   private navLogoHeight: string = '56px';
 }

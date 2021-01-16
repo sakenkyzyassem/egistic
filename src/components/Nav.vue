@@ -39,6 +39,7 @@
 import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
 import Logo from './Logo.vue';
+import { navItems1, navItems2 } from '@/api/data';
 
 @Component({
     name: 'MainNav',
@@ -47,31 +48,8 @@ import Logo from './Logo.vue';
     },
 })
 export default class MainNav extends Vue {
-    private navItems1: ELink[] = [
-    {
-      title: 'О нас',
-      to: '/someRoute',
-    },
-    {
-      title: 'Услуги',
-      to: '/someRoute',
-    },
-    {
-      title: 'Новости',
-      to: '/someRoute',
-    },
-  ];
-
-  private navItems2: ELink[] = [
-    {
-      title: 'Инструкции для пользователя',
-      to: '/',
-    },
-    {
-      title: 'Часто задаваемые вопросы',
-      to: '/',
-    },
-  ];
+  private navItems1: ELink[] = navItems1;
+  private navItems2: ELink[] = navItems2;
 }
 </script>
 

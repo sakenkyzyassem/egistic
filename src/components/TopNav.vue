@@ -9,13 +9,13 @@
         <div class="ml-auto">
             <b-button
                 variant="light"
-                @click="signin"
+                @click="alertMe('Sign in')"
             >
-            <svg-icon icon="person" height="19px" :fill="false"></svg-icon>
+            <svg-icon icon="person" height="19px" :fill="false" color="#1C1C1C r-#1C1C1C"></svg-icon>
             Войти в кабинет</b-button>
             <b-button
                 variant="primary"
-                @click="signup"
+                @click="alertMe('Sign up')"
             >Зарегистрироваться</b-button>
         </div>
 
@@ -30,14 +30,8 @@ import { Component, Vue } from 'vue-property-decorator';
     name: 'top-nav',
 })
 export default class TopNav extends Vue {
-    private signin(): void {
-        alert('Clicked SignIn');
-        return;
-    }
-
-    private signup(): void {
-        alert('Clicked SignUp');
-        return;
+    private alertMe(btn: string): void {
+        alert('Alert was triggered by ' + btn);
     }
 }
 </script>
